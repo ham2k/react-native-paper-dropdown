@@ -124,7 +124,7 @@ const DropDown = forwardRef((props, _ref) => {
                   <Menu.Item titleStyle={{
                 color: isActive(_item.value)
                     ? activeColor || (theme || activeTheme).colors.primary
-                    : (theme || activeTheme).colors.onPrimary,
+                    : (theme || activeTheme).colors.onSurface,
                 ...(isActive(_item.value)
                     ? dropDownItemSelectedTextStyle
                     : dropDownItemTextStyle),
