@@ -14,7 +14,7 @@ Peer dependencies
     "@hashiprobr/react-use-mount-and-update": "*",
     "@types/react": "^18.2",
     "@types/react-native": "^0.72",
-    "react": "^17",
+    "react": "^18",
     "react-native": "^0.66",
     "react-native-paper": "^5.11",
     "typescript": "*"
