@@ -1,7 +1,7 @@
 {
-  "name": "@hashiprobr/react-native-paper-dropdown",
-  "version": "1.0.11",
-  "description": "A fork of Fateh Farooqui's react-native-paper-dropdown with additional configurability",
+  "name": "@developerblue/react-native-paper-dropdown",
+  "version": "1.1.0",
+  "description": "A fork of Marcelo Hashimoto's fork of Fateh Farooqui's react-native-paper-dropdown with patched support for React Native Paper v5",
   "keywords": [
     "JavaScript",
     "React",
@@ -11,20 +11,24 @@
     "DropDown",
     "Material Design"
   ],
-  "homepage": "https://github.com/hashiprobr/react-native-paper-dropdown#readme",
+  "homepage": "https://github.com/DeveloperBlue/react-native-paper-dropdown#readme",
   "bugs": {
-    "url": "https://github.com/hashiprobr/react-native-paper-dropdown/issues"
+    "url": "https://github.com/DeveloperBlue/react-native-paper-dropdown/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/hashiprobr/react-native-paper-dropdown.git"
+    "url": "git+https://github.com/DeveloperBlue/react-native-paper-dropdown.git.git"
   },
   "license": "MIT",
-  "author": "Marcelo Hashimoto",
+  "author": "Michael Rooplall",
   "contributors": [
     {
       "name": "Fateh Farooqui",
       "url": "https://github.com/fateh999"
+    },
+    {
+      "name" : "Marcelo Hashimoto",
+      "url" : "https://github.com/hashiprobr"
     }
   ],
   "main": "dist/DropDown.js",
@@ -37,11 +41,11 @@
   },
   "peerDependencies": {
     "@hashiprobr/react-use-mount-and-update": "*",
-    "@types/react": "*",
-    "@types/react-native": "*",
-    "react": "*",
-    "react-native": "*",
-    "react-native-paper": "*",
+    "@types/react": "^18.2",
+    "@types/react-native": "^0.72",
+    "react": "^17",
+    "react-native": "^0.66",
+    "react-native-paper": "^5.11",
     "typescript": "*"
   },
   "publishConfig": {

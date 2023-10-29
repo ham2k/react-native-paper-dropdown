@@ -1,9 +1,9 @@
 react-native-paper-dropdown
 ===========================
 
-**A fork of [Fateh Farooqui](https://github.com/fateh999)'s
+**A fork of Marcelo Hashimoto's fork of [Fateh Farooqui](https://github.com/fateh999)'s
 [react-native-paper-dropdown](https://fateh999.github.io/react-native-paper-dropdown/#/)
-with additional configurability**
+with various patches**
 
 
 Peer dependencies
@@ -12,11 +12,11 @@ Peer dependencies
 ``` json
 {
     "@hashiprobr/react-use-mount-and-update": "*",
-    "@types/react": "*",
-    "@types/react-native": "*",
-    "react": "*",
-    "react-native": "*",
-    "react-native-paper": "*",
+    "@types/react": "^18.2",
+    "@types/react-native": "^0.72",
+    "react": "^17",
+    "react-native": "^0.66",
+    "react-native-paper": "^5.11",
     "typescript": "*"
 }
 ```
@@ -47,7 +47,7 @@ module.exports = async function (env, argv) {
         ...env,
         babel: {
             dangerouslyAddModulePathsToTranspile: [
-                '@hashiprobr/react-native-paper-dropdown',
+                '@developerblue/react-native-paper-dropdown',
             ],
         },
     }, argv);
@@ -61,8 +61,14 @@ If `webpack.config.js` does not exist, create it with:
 expo customize:web
 ```
 
+Michael Rooplall's (DeveloperBlue's) Changes
+-------------
+- Fixed caret icon not rendering
+- Added support for MD3 Theming
+- Added more precise version dependencies for react, react native, and react-native-paper
 
-Removed props
+
+Hashimoto's Removed props
 -------------
 
 | name         | description              |
@@ -74,7 +80,7 @@ Removed props
 | inputProps   | not available            |
 
 
-Added props
+Hashimoto's Added props
 -----------
 
 | name                 | description |
