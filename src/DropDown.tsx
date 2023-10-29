@@ -20,6 +20,7 @@ import React, {
   useState,
   useCallback,
   Fragment,
+  Ref,
 } from "react";
 import { MD3Theme as Theme } from "react-native-paper/lib/typescript/types";
 import { IconSource } from "react-native-paper/lib/typescript/components/Icon";
@@ -70,8 +71,8 @@ export interface DropDownPropsInterface {
   iconStyle?: any;
 }
 
-const DropDown = forwardRef<TouchableWithoutFeedback, DropDownPropsInterface>(
-  (props, ref) => {
+const DropDown = forwardRef<any, DropDownPropsInterface>(
+  (props, _ref) => {
     const activeTheme = useTheme();
     const {
       multiSelect = false,
@@ -187,7 +188,6 @@ const DropDown = forwardRef<TouchableWithoutFeedback, DropDownPropsInterface>(
         theme={theme}
         anchor={
           <TouchableRipple
-            ref={ref}
             onPress={showDropDown}
             onLayout={onLayout}
             accessibilityLabel={accessibilityLabel}
