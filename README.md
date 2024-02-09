@@ -1,9 +1,14 @@
 react-native-paper-dropdown
 ===========================
 
-**A fork of Marcelo Hashimoto's fork of [Fateh Farooqui](https://github.com/fateh999)'s
-[react-native-paper-dropdown](https://fateh999.github.io/react-native-paper-dropdown/#/)
-with various patches**
+**A fork of [react-native-paper-dropdown](https://fateh999.github.io/react-native-paper-dropdown/#/)**
+
+Michael Rooplall's (DeveloperBlue's) Changes
+-------------
+- Fixed caret icon not rendering
+- Added support for MD3 Theming
+- Added more precise version dependencies for react, react native, and react-native-paper
+- Added support for react-native-web
 
 
 Peer dependencies
@@ -17,7 +22,6 @@ Peer dependencies
     "react": ">=17",
     "react-native": ">=0.66",
     "react-native-paper": ">=5",
-    "typescript": "*"
 }
 ```
 
@@ -60,13 +64,6 @@ If `webpack.config.js` does not exist, create it with:
 ```
 expo customize:web
 ```
-
-Michael Rooplall's (DeveloperBlue's) Changes
--------------
-- Fixed caret icon not rendering
-- Added support for MD3 Theming
-- Added more precise version dependencies for react, react native, and react-native-paper
-
 
 Hashimoto's Removed props
 -------------

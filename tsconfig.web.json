@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "lib": ["es6"],
+    "declaration": true,
+    "strict": true,
+    "allowSyntheticDefaultImports": true,
+    "sourceMap": false,
+    "noUnusedParameters": true,
+    "strictNullChecks": true,
+    "moduleResolution": "node",
+    "noImplicitAny": true,
+    "module": "system",
+    "outFile": "./dist/DropDown.web.js",
+    "outDir": "./dist",
+    "target": "esnext",
+    "jsx": "react",
+    "skipLibCheck": true,
+    "typeRoots": ["node_modules/@types"]
+  },
+  "include": ["./src/DropDown.tsx"],
+  "exclude": ["./node_modules", "./Example"]
+}

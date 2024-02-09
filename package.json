@@ -27,8 +27,8 @@
       "url": "https://github.com/fateh999"
     },
     {
-      "name" : "Marcelo Hashimoto",
-      "url" : "https://github.com/hashiprobr"
+      "name": "Marcelo Hashimoto",
+      "url": "https://github.com/hashiprobr"
     }
   ],
   "main": "dist/DropDown.js",
@@ -37,7 +37,9 @@
     "dist"
   ],
   "scripts": {
-    "build": "tsc"
+    "build" : "npm run build:native && npm run build:web",
+    "build:native": "tsc",
+    "build:web": "tsc -p tsconfig.web.json"
   },
   "peerDependencies": {
     "@hashiprobr/react-use-mount-and-update": "*",
@@ -45,10 +47,12 @@
     "@types/react-native": "*",
     "react": ">=17",
     "react-native": ">=0.66",
-    "react-native-paper": ">=5",
-    "typescript": "*"
+    "react-native-paper": ">=5"
   },
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"
+  },
+  "devDependencies": {
+    "typescript": "^5.3.3"
   }
 }
