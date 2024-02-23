@@ -53,6 +53,7 @@ export interface DropDownPropsInterface {
   onFocus?: (_value: any) => void;
   onBlur?: (_value: any) => void;
   style?: any;
+  contentStyle?: any;
   editable?: boolean;
   borderless?: boolean;
   background?: object;
@@ -96,6 +97,7 @@ const DropDown = forwardRef<any, DropDownPropsInterface>(
       onFocus = () => { },
       onBlur = () => { },
       style = {},
+      contentStyle,
       editable,
       borderless,
       background,
@@ -262,6 +264,7 @@ const DropDown = forwardRef<any, DropDownPropsInterface>(
                   marginBottom: 0,
                   marginLeft: 0,
                 }}
+                contentStyle={contentStyle}
                 editable={false}
               />
             </View>

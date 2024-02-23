@@ -18,7 +18,7 @@ System.register("DropDown", ["react-native", "react-native-paper", "react"], fun
             useUpdate = require("@hashiprobr/react-use-mount-and-update").useUpdate;
             DropDown = react_1.forwardRef((props, _ref) => {
                 const activeTheme = react_native_paper_1.useTheme();
-                const { multiSelect = false, value, onChangeValue, activeColor, mode, label, placeholder, list, dropDownContainerMaxHeight, dropDownContainerHeight, theme, dropDownStyle, dropDownItemStyle, dropDownItemSelectedStyle, dropDownItemTextStyle, dropDownItemSelectedTextStyle, accessibilityLabel, disabled, onFocus = () => { }, onBlur = () => { }, style = {}, editable, borderless, background, centered, rippleColor, underlayColor, touchableStyle, error, selectionColor, underlineColor, activeUnderlineColor, outlineColor, activeOutlineColor, dense, iconColor, iconStyle, } = props;
+                const { multiSelect = false, value, onChangeValue, activeColor, mode, label, placeholder, list, dropDownContainerMaxHeight, dropDownContainerHeight, theme, dropDownStyle, dropDownItemStyle, dropDownItemSelectedStyle, dropDownItemTextStyle, dropDownItemSelectedTextStyle, accessibilityLabel, disabled, onFocus = () => { }, onBlur = () => { }, style = {}, contentStyle, editable, borderless, background, centered, rippleColor, underlayColor, touchableStyle, error, selectionColor, underlineColor, activeUnderlineColor, outlineColor, activeOutlineColor, dense, iconColor, iconStyle, } = props;
                 const [displayValue, setDisplayValue] = react_1.useState("");
                 const [inputLayout, setInputLayout] = react_1.useState({
                     height: 0,
@@ -107,7 +107,7 @@ System.register("DropDown", ["react-native", "react-native-paper", "react"], fun
                                     marginRight: 0,
                                     marginBottom: 0,
                                     marginLeft: 0,
-                                }, editable: false }))), style: {
+                                }, contentStyle: contentStyle, editable: false }))), style: {
                         maxWidth: inputLayout?.width,
                         width: inputLayout?.width,
                         marginTop: inputLayout?.height,

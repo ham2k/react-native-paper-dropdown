@@ -4,7 +4,7 @@ import React, { forwardRef, useState, useCallback, Fragment, } from "react";
 const { useUpdate } = require("@hashiprobr/react-use-mount-and-update");
 const DropDown = forwardRef((props, _ref) => {
     const activeTheme = useTheme();
-    const { multiSelect = false, value, onChangeValue, activeColor, mode, label, placeholder, list, dropDownContainerMaxHeight, dropDownContainerHeight, theme, dropDownStyle, dropDownItemStyle, dropDownItemSelectedStyle, dropDownItemTextStyle, dropDownItemSelectedTextStyle, accessibilityLabel, disabled, onFocus = () => { }, onBlur = () => { }, style = {}, editable, borderless, background, centered, rippleColor, underlayColor, touchableStyle, error, selectionColor, underlineColor, activeUnderlineColor, outlineColor, activeOutlineColor, dense, iconColor, iconStyle, } = props;
+    const { multiSelect = false, value, onChangeValue, activeColor, mode, label, placeholder, list, dropDownContainerMaxHeight, dropDownContainerHeight, theme, dropDownStyle, dropDownItemStyle, dropDownItemSelectedStyle, dropDownItemTextStyle, dropDownItemSelectedTextStyle, accessibilityLabel, disabled, onFocus = () => { }, onBlur = () => { }, style = {}, contentStyle, editable, borderless, background, centered, rippleColor, underlayColor, touchableStyle, error, selectionColor, underlineColor, activeUnderlineColor, outlineColor, activeOutlineColor, dense, iconColor, iconStyle, } = props;
     const [displayValue, setDisplayValue] = useState("");
     const [inputLayout, setInputLayout] = useState({
         height: 0,
@@ -93,7 +93,7 @@ const DropDown = forwardRef((props, _ref) => {
                 marginRight: 0,
                 marginBottom: 0,
                 marginLeft: 0,
-            }} editable={false}/>
+            }} contentStyle={contentStyle} editable={false}/>
             </View>
           </TouchableRipple>} style={{
             maxWidth: inputLayout?.width,

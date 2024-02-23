@@ -29,6 +29,7 @@ declare module "DropDown" {
         onFocus?: (_value: any) => void;
         onBlur?: (_value: any) => void;
         style?: any;
+        contentStyle?: any;
         editable?: boolean;
         borderless?: boolean;
         background?: object;
