@@ -101,7 +101,7 @@ const DropDown = forwardRef((props, _ref) => {
             marginTop: inputLayout?.height,
             ...dropDownStyle,
         }}>
-        <ScrollView bounces={false} style={{
+        <ScrollView keyboardShouldPersistTaps="handled" bounces={false} style={{
             ...(dropDownContainerHeight
                 ? {
                     height: dropDownContainerHeight,

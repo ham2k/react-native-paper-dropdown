@@ -275,6 +275,7 @@ const DropDown = forwardRef<any, DropDownPropsInterface>(
         }}
       >
         <ScrollView
+          keyboardShouldPersistTaps="handled"
           bounces={false}
           style={{
             ...(dropDownContainerHeight

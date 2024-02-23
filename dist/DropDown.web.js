@@ -113,7 +113,7 @@ System.register("DropDown", ["react-native", "react-native-paper", "react"], fun
                         marginTop: inputLayout?.height,
                         ...dropDownStyle,
                     } },
-                    react_1.default.createElement(react_native_1.ScrollView, { bounces: false, style: {
+                    react_1.default.createElement(react_native_1.ScrollView, { keyboardShouldPersistTaps: "handled", bounces: false, style: {
                             ...(dropDownContainerHeight
                                 ? {
                                     height: dropDownContainerHeight,
