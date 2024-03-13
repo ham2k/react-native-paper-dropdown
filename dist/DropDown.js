@@ -46,7 +46,7 @@ const DropDown = forwardRef((props, _ref) => {
         else {
             return value === currentValue;
         }
-    }, [value]);
+    }, [value, multiSelect]);
     const setActive = useCallback((currentValue) => {
         if (multiSelect) {
             const valueIndex = value.indexOf(currentValue);
@@ -61,7 +61,7 @@ const DropDown = forwardRef((props, _ref) => {
         else {
             onChangeValue(currentValue);
         }
-    }, [value]);
+    }, [value, onChangeValue, multiSelect]);
     return (<Menu visible={visible} onDismiss={onDismiss} theme={theme} anchor={<TouchableRipple onPress={showDropDown} onLayout={onLayout} accessibilityLabel={accessibilityLabel} onFocus={onFocus} onBlur={onBlur} borderless={borderless} background={background} centered={centered} disabled={disabled} rippleColor={rippleColor} underlayColor={underlayColor} style={{
                 ...touchableStyle,
                 flexGrow: 1,

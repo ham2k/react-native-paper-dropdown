@@ -60,7 +60,7 @@ System.register("DropDown", ["react-native", "react-native-paper", "react"], fun
                     else {
                         return value === currentValue;
                     }
-                }, [value]);
+                }, [value, multiSelect]);
                 const setActive = react_1.useCallback((currentValue) => {
                     if (multiSelect) {
                         const valueIndex = value.indexOf(currentValue);
@@ -75,7 +75,7 @@ System.register("DropDown", ["react-native", "react-native-paper", "react"], fun
                     else {
                         onChangeValue(currentValue);
                     }
-                }, [value]);
+                }, [value, onChangeValue, multiSelect]);
                 return (react_1.default.createElement(react_native_paper_1.Menu, { visible: visible, onDismiss: onDismiss, theme: theme, anchor: react_1.default.createElement(react_native_paper_1.TouchableRipple, { onPress: showDropDown, onLayout: onLayout, accessibilityLabel: accessibilityLabel, onFocus: onFocus, onBlur: onBlur, borderless: borderless, background: background, centered: centered, disabled: disabled, rippleColor: rippleColor, underlayColor: underlayColor, style: {
                             ...touchableStyle,
                             flexGrow: 1,

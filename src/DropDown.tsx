@@ -161,7 +161,7 @@ const DropDown = forwardRef<any, DropDownPropsInterface>(
           return value === currentValue;
         }
       },
-      [value]
+      [value, multiSelect]
     );
 
     const setActive = useCallback(
@@ -180,7 +180,7 @@ const DropDown = forwardRef<any, DropDownPropsInterface>(
           onChangeValue(currentValue);
         }
       },
-      [value]
+      [value, onChangeValue, multiSelect]
     );
 
     return (
